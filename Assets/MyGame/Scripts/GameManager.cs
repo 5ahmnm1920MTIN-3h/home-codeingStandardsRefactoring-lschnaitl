@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     
     private int score = 0;
+    private const string MAIN_SCENE_NAME = "MainScene";
+    private const string MENU_SCENE_NAME = "MenuScene";
 
     private void Awake()
     {
@@ -38,11 +40,11 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(MAIN_SCENE_NAME);
     }
     public void Menu()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene(MENU_SCENE_NAME);
     }
 
     public void IncrementScore()

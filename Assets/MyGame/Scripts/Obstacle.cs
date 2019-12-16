@@ -3,7 +3,8 @@
 public class Obstacle : MonoBehaviour
 {
     private Rigidbody2D rb;
-    [SerializeField] private float MoveSpeed;
+    private const float OFFSET = 15f;
+    [SerializeField] private float moveSpeed;
 
     private void Awake()
     {
@@ -14,13 +15,13 @@ public class Obstacle : MonoBehaviour
     private void Update()
     {
         //if obstacle's position x is < -15f it will be destroyed
-        if(transform.position.x < -15f)
+        if(transform.position.x < -OFFSET)
         {
             Destroy(gameObject);
         }
         
         //if obstacle's position x is < -15f it will be destroyed
-        if (transform.position.x > 15f)
+        if (transform.position.x > OFFSET)
         {
             Destroy(gameObject);
         }
@@ -28,6 +29,6 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = Vector2.left * MoveSpeed;
+        rb.velocity = Vector2.left * moveSpeed;
     }
 }

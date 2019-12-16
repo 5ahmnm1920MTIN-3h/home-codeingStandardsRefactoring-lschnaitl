@@ -10,7 +10,6 @@ public class TextureScroll : MonoBehaviour
     private void Awake()
     {
         backgroundMaterial = GetComponent<Renderer>().material;
-
     }
 
     private void FixedUpdate()
