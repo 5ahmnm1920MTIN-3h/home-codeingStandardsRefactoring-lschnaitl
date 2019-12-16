@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag(GROUND_TAG))
         {
             grounded = true;
-
         }
     }
 
