@@ -29,6 +29,7 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // add the movement speed to the rigidbodys velocity in the correct direction
         rb.velocity = Vector2.left * moveSpeed;
     }
 }
