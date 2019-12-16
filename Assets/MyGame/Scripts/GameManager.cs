@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject gameOverPanel;
     public Text scoreText;
-    string defaultText;
-    int score = 0;
+    
+    private int score = 0;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         gameOverPanel.SetActive(true);
     }
 
-    void StopScrolling()
+    private void StopScrolling()
     {
         TextureScroll[] scrollingObjects = FindObjectsOfType<TextureScroll>();
 
@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
-
     public void Menu()
     {
         SceneManager.LoadScene("MenuScene");

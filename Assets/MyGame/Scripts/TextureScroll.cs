@@ -5,7 +5,7 @@ public class TextureScroll : MonoBehaviour
     public float scrollSpeed;
     public bool scroll = true;
 
-    Material backgroundMaterial;
+    private Material backgroundMaterial;
 
     private void Awake()
     {

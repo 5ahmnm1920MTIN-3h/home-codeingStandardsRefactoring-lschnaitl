@@ -2,7 +2,7 @@
 
 public class Obstacle : MonoBehaviour
 {
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
     [SerializeField] private float MoveSpeed;
 
     private void Awake()
@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //if obstacle's position x is < -15f it will be destroyed
         if(transform.position.x < -15f)
