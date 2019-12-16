@@ -40,11 +40,6 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.IncrementScore();
     }
 
-    private static bool SetGameOverTrue()
-    {
-        return true;
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)  
     {
         if(collision.gameObject.CompareTag(GROUND_TAG))
@@ -61,7 +56,7 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.GameOver();
             Destroy(collision.gameObject);
             anim.Play(DEATH_STATE_NAME);
-            gameOver = SetGameOverTrue();
+            gameOver = true;
         }
     }
 }
