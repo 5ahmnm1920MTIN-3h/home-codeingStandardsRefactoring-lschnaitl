@@ -30,8 +30,8 @@ Magical Strings oder Nummer oder zb. Unnötige Methoden. Generell Code der nicht
   
     private void Movement () 
     {
-    float axisV = Input.GetAxis("Horizontal");
-    float axisH = Input.GetAxis("Vertical");
+     float axisV = Input.GetAxis("Horizontal");
+     float axisH = Input.GetAxis("Vertical");
     }
 </code>
   
@@ -43,9 +43,9 @@ Player Controller Script: Der Rotation Code sollte vom Movement Code getrennt se
   
      private void Movement ()
      {
-      float axisV = Input.GetAxis("Horizontal") * 5f;
-      float axisH = Input.GetAxis("Vertical") - 10f;
-    }
+       float axisV = Input.GetAxis("Horizontal") * 5f;
+       float axisH = Input.GetAxis("Vertical") - 10f;
+     }
   
 </code>
 
@@ -94,14 +94,14 @@ GameManager und MenuManager haben geteilt jeweils weniger als 400 Zeilen Code.
   
     pubic class Test : MonoBehaviour 
     {
-      private float guteVariable;
+      private float correctlyPlacedVariable;
     
       private void Update ()
       {
         Debug.Log("Made by Leonhard Schnaitl");
       }
       
-      private static string wrongVarPlacement;
+      private static string wrongVarablePlacement;
       
       public void SomeMethod ()
       {
