@@ -1,21 +1,24 @@
-# Santa Run
-
-# Ausarbeitung
+# Ausarbeitung Refactoring
 
 ## Was ist Refactoring Definition in eigenen Worten?
 Refactoring ist das Überarbeiten eines Codes, um diesen nicht nur effizienter vom Maschinen-Standpunkt aus zu machen, sondern auch leserlicher für den Menschen.
 
 ## Welche Vorteile/Nachteile birgt Refactoring?
-Die Vorteile sind, dass der Code für dritte und für einen selbst besser leserlich ist und man danach leichter weiterarbeiten kann. Der einzige Nachteil ist der zusätzliche Arbeitsaufwand.
+ + Die Vorteile sind, dass der Code für dritte und für einen selbst besser leserlich ist und man danach leichter weiterarbeiten kann.  
+ + Der einzige Nachteil ist der zusätzliche Arbeitsaufwand.
 
 ## Was sind die Refactoring-Schritte?
-Testcase definieren. Schauen ob programm funktioniert. Code Smell beseitigen. Testcase ausprobieren ob alles noch funktioniert. Wenn ja, commiten.
+ + Testcase definieren.  
+ + Schauen ob programm funktioniert.  
+ + Code Smell beseitigen.  
+ + Testcase ausprobieren ob alles noch funktioniert.  
+ + Wenn ja, commiten.
 
 ## Prinzipien von gutem Code?
-### DRY -Don’t Repeat Yourself
-### KISS -Keep it Simple,
-### StupidYAGNI -You Ain’t Gonna Need Principle of least Astonishment 
-### SoC-Separation of Concerns
+ + DRY -Don’t Repeat Yourself
+ + KISS -Keep it Simple,
+ + StupidYAGNI -You Ain’t Gonna Need Principle of least Astonishment 
+ + SoC-Separation of Concerns
 
 ## Was versteht man unter Code Smell?
 Magical Strings oder Nummer oder zb. Unnötige Methoden. Generell Code der nicht sinnvoll strukturiert ist
@@ -30,7 +33,6 @@ Magical Strings oder Nummer oder zb. Unnötige Methoden. Generell Code der nicht
     float axisV = Input.GetAxis("Horizontal");
     float axisH = Input.GetAxis("Vertical");
     }
-  
 </code>
   
 #### 2. Methode zu lange – Methode die mehr als 25 Zeilen Code hat.
@@ -135,6 +137,8 @@ GameManager und MenuManager haben geteilt jeweils weniger als 400 Zeilen Code.
     //Code}
     
 </code>
+
+# SantaRun by Frau Meerwald-Stadler
 
 ### Project description: 
 This is a simple 2D side-scroll game. The Santa runs from left to right and has to avoid some obstacles by jumping over them.
